@@ -11,6 +11,9 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/slider */ "./src/js/components/slider.js");
 /* harmony import */ var _components_validate__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/validate */ "./src/js/components/validate.js");
+/* harmony import */ var _components_custom_select__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/custom-select */ "./src/js/components/custom-select.js");
+/* harmony import */ var _components_custom_select__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_custom_select__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 
@@ -125,6 +128,38 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/js/components/custom-select.js":
+/*!********************************************!*\
+  !*** ./src/js/components/custom-select.js ***!
+  \********************************************/
+/***/ (() => {
+
+var select = function select() {
+  var selectHeader = document.querySelectorAll('.social-select__header');
+  var selectItem = document.querySelectorAll('.social-select__item');
+  selectHeader.forEach(function (item) {
+    item.addEventListener('click', selectToggle);
+  });
+  selectItem.forEach(function (item) {
+    item.addEventListener('click', selectChoose);
+  });
+
+  function selectToggle() {
+    this.parentElement.classList.toggle('is-active');
+  }
+
+  function selectChoose() {
+    var text = this.innerText,
+        // select = this.closest('.social-select'),
+    currentText = this.closeset('.social-select').querySelector('.social-select__current');
+    currentText.innerText = text; // select.classList.remove('is-active');
+  }
+};
+
+select();
+
+/***/ }),
+
 /***/ "./src/js/components/slider.js":
 /*!*************************************!*\
   !*** ./src/js/components/slider.js ***!
@@ -146,11 +181,6 @@ swipersNew.forEach(function (el) {
         spaceBetween: 20
       },
       768: {
-        slidesPerView: 2,
-        spaceBetween: 30
-      },
-      // when window width is >= 480px
-      1200: {
         slidesPerView: 3,
         spaceBetween: 30
       },
