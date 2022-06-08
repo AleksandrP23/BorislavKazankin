@@ -527,6 +527,11 @@ a {
     bottom: 3.5%;
   }
 }
+@media (max-width: 576px) {
+  .hero::after {
+    bottom: -0.5%;
+  }
+}
 .hero__container {
   position: relative;
 }
@@ -619,6 +624,7 @@ a {
     -webkit-transform: translate(14px, -35px);
     -ms-transform: translate(14px, -35px);
     transform: translate(14px, -35px);
+    -webkit-text-stroke: 1px #39453b;
   }
 }
 @media (max-width: 576px) {
@@ -1684,7 +1690,7 @@ a {
     margin-bottom: 34px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 576px) {
   .contact__title {
     font-size: 24px;
     line-height: 36px;
@@ -2413,4 +2419,3 @@ a {
     background-color: #f2f2f2;
   }
 }
-/*# sourceMappingURL=main.css.map */
