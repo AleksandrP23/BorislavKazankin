@@ -523,8 +523,8 @@ a {
 @media (max-width: 1024px) {
   .hero::after {
     max-width: 767px;
-    height: 222px;
-    bottom: 3.5%;
+    height: 318px;
+    bottom: 1.5%;
   }
 }
 @media (max-width: 576px) {
