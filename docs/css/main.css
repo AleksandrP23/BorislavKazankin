@@ -714,8 +714,8 @@ a {
   .hero__item-title::before {
     width: 24px;
     height: 24px;
-    top: -2px;
-    left: -38px;
+    top: 0;
+    left: -36px;
   }
 }
 .hero__item-text {
