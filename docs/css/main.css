@@ -712,10 +712,10 @@ a {
 }
 @media (max-width: 576px) {
   .hero__item-title::before {
-    width: 25px;
-    height: 25px;
+    width: 24px;
+    height: 24px;
     top: -2px;
-    left: -39px;
+    left: -38px;
   }
 }
 .hero__item-text {
@@ -880,7 +880,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
-  z-index: -1;
+  z-index: 0;
 }
 @media (max-width: 1240px) {
   .about-directions::before {
@@ -953,7 +953,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
-  z-index: -1;
+  z-index: 0;
 }
 @media (max-width: 1024px) {
   .about-significant::before {
@@ -1098,11 +1098,14 @@ a {
 }
 .project .subtitle {
   background-color: var(--bg-color-one);
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
-  border-bottom-left-radius: 40px;
+  border-top-right-radius: 37px;
+  border-bottom-right-radius: 37px;
+  border-bottom-left-radius: 37px;
   padding: 40px 67px;
   margin-bottom: 25px;
+  margin-top: -1px;
+  margin-left: -1px;
+  margin-right: -1px;
 }
 @media (max-width: 1024px) {
   .project .subtitle {
@@ -1193,7 +1196,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
-  z-index: -1;
+  z-index: 0;
 }
 @media (max-width: 1240px) {
   .project__item:first-child::before {
@@ -1219,6 +1222,11 @@ a {
     margin-right: auto;
   }
 }
+@media (max-width: 1024px) {
+  .project__item:nth-child(2) {
+    border-top-left-radius: 23px;
+  }
+}
 @media (max-width: 576px) {
   .project__item:nth-child(2) {
     margin-bottom: 30px;
@@ -1235,7 +1243,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
-  z-index: -1;
+  z-index: 0;
 }
 @media (max-width: 1240px) {
   .project__item:nth-child(2)::before {
@@ -1244,7 +1252,7 @@ a {
 }
 .project__item:nth-child(2).project__item--color .subtitle {
   border-top-right-radius: 0;
-  border-top-left-radius: 40px;
+  border-top-left-radius: 37px;
 }
 @media (max-width: 1024px) {
   .project__item:nth-child(2).project__item--color .subtitle {
@@ -1284,7 +1292,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
-  z-index: -1;
+  z-index: 0;
 }
 @media (max-width: 1240px) {
   .project__item:nth-child(3)::before {
@@ -1308,6 +1316,11 @@ a {
     margin-right: auto;
   }
 }
+@media (max-width: 1024px) {
+  .project__item:nth-child(4) {
+    border-top-left-radius: 23px;
+  }
+}
 .project__item:nth-child(4)::before {
   content: "";
   position: absolute;
@@ -1319,7 +1332,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
-  z-index: -1;
+  z-index: 0;
 }
 @media (max-width: 1240px) {
   .project__item:nth-child(4)::before {
@@ -1349,7 +1362,12 @@ a {
 }
 .project__item:nth-child(4).project__item--color .subtitle {
   border-top-right-radius: 0;
-  border-top-left-radius: 40px;
+  border-top-left-radius: 37px;
+}
+@media (max-width: 1024px) {
+  .project__item:nth-child(4).project__item--color .subtitle {
+    border-top-left-radius: 23px;
+  }
 }
 .project__item--color {
   border: 2px solid var(--bg-color-two);
@@ -1523,7 +1541,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
-  z-index: -1;
+  z-index: 0;
 }
 @media (max-width: 1240px) {
   .activities__item:nth-child(odd)::before {
@@ -1534,7 +1552,7 @@ a {
   .activities__item:nth-child(odd)::before {
     width: 25px;
     height: 25px;
-    top: 0px;
+    top: 4%;
   }
 }
 .activities__item:nth-child(odd) .activities__item-date {
@@ -1583,7 +1601,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
-  z-index: -1;
+  z-index: 0;
 }
 @media (max-width: 1240px) {
   .activities__item:nth-child(even)::before {
@@ -1594,7 +1612,7 @@ a {
   .activities__item:nth-child(even)::before {
     width: 25px;
     height: 25px;
-    top: 0;
+    top: 4%;
   }
 }
 .activities__item:nth-child(even) .activities__item-date {
@@ -1970,9 +1988,10 @@ a {
   background-color: var(--light-color);
   opacity: 0.7;
   border-radius: 10px;
-  padding: 10px 25px;
+  padding: 16px 25px;
   font-weight: 400;
   font-size: 16px;
+  line-height: 36px;
   color: var(--primary-color);
   resize: vertical;
   -webkit-appearance: none;
